@@ -1,0 +1,9 @@
+std::vector<double> parsingStringToDouble(const std::string &sequence) {
+    std::vector<double> result;
+    std::istringstream s(sequence);
+    double d;
+    while (s >> d) {
+        result.push_back(d);
+    }
+    return result;
+}
